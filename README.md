@@ -52,14 +52,20 @@ This script will:
 
 ### Usage
 
-The generated Go code will be available in the `/go/api` directory. You can import these packages in your Go projects to interact with KiCad data structures.
+To use these bindings in your Go project, first install the package:
+
+```bash
+go get github.com/JKI757/kicad_go_api
+```
+
+Then import the packages you need in your Go code:
 
 Example import paths:
 ```go
 import (
-    "github.com/kicad/proto/board"
-    "github.com/kicad/proto/common"
-    "github.com/kicad/proto/schematic"
+    "github.com/JKI757/kicad_go_api/go/api/board"
+    "github.com/JKI757/kicad_go_api/go/api/common"
+    "github.com/JKI757/kicad_go_api/go/api/schematic"
 )
 ```
 
